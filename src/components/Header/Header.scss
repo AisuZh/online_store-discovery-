@@ -1,0 +1,84 @@
+@mixin fonts {
+    font: {
+        size: 14px;
+        weight: 400;
+
+    }
+
+    line-height: 150%;
+    align-items: center;
+    color: #343030;
+    margin-left: 48px;
+}
+
+.header {
+    border: 1px solid #E1E1E1;
+    background: #E5E5E5;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    &__link {
+        @include fonts
+    }
+
+    &__search {
+        margin-left: 160px;
+    }
+
+    &__search input {
+        height: 48px;
+        width: 295px;
+        border: 1px solid #E1E1E1;
+        padding: 14px 16px;
+        background: #E5E5E5;
+    }
+
+    &__search input::placeholder {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #9F9F9F;
+        margin-left: 5px;
+    }
+
+    &__search input:focus {
+        outline: none;
+    }
+
+    &__btn {
+        height: 48px;
+        background: #403432;
+        border-radius: 0px;
+        width: 122px;
+        cursor: pointer;
+
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+        padding: 13px 35px;
+    }
+
+    &__btn:hover {
+        background-color: #776763;
+        border: none;
+    }
+
+}
